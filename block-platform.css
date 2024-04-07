@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -207,7 +207,7 @@ nav {
     }
 
     .dropdown :hover {
-        color: #000;
+        color: #F7418F;
     }
 
     .toggle_btn {
@@ -216,6 +216,10 @@ nav {
 
     .dropdown {
         display: block;
+    }
+
+    .dropdown a {
+        color: #000;
     }
 }
 
@@ -226,7 +230,63 @@ nav {
     }
 }
 
+/*Week 3*/
+.search {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 .search-container {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #F7418F;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #FFF3C7;
+    color: black;
+    transform: scale(1.05);
+}
+
+#search-results {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+#search-results {
+    display: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+/*Week 3*/
+
+/*.search-container {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -256,191 +316,7 @@ nav {
 
 .search-container button:hover {
     background-color: #FEC7B4;
-}
-
-.trend-contain h1 {
-    text-align: center;
-    margin-top: 5%;
-    color: #fefefe;
-}
-
-.trend-box {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.trend {
-    display: inline-block;
-    margin: 20px;
-}
-
-
-.trend {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-    max-width: 300px;
-}
-
-.trend:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.trend-product {
-    padding: 20px;
-}
-
-.trend .top {
-    display: flex;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-
-}
-
-.t-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
-.title {
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.title:hover {
-    color: #F7418F;
-}
-
-
-.date span {
-    color: #666;
-    font-size: 14px;
-}
-
-.trend .trend-author {
-    display: block;
-}
-
-.trend-author {
-    color: #666;
-    font-size: 14px;
-}
-
-.read-btn {
-    text-decoration: none;
-    color: #F7418F;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.read-btn:hover {
-    text-decoration: underline;
-    color: #FEC7B4;
-}
-
-.blogs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 10%;
-}
-
-.thai-block-contain h1 {
-    text-align: center;
-    color: #fefefe;
-}
-
-.thai-box {
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 300px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    margin: 20px;
-    overflow: hidden;
-    position: relative;
-}
-
-.thai-product {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.thai-img {
-    flex: 0 0 auto;
-    margin-right: 20px;
-    width: 80px;
-    height: 80px;
-    overflow: hidden;
-}
-
-.thai-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.thai-product-text {
-    flex: 1;
-}
-
-.date {
-    font-size: 14px;
-    color: #6c757d;
-    margin-bottom: 5px;
-}
-
-.title {
-    font-size: 18px;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.title:hover {
-    color: #F7418F;
-}
-
-.author {
-    margin-top: 10px;
-}
-
-.trend-author {
-    font-size: 16px;
-    color: #555;
-}
-
-.read-btn {
-    color: #F7418F;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 10px;
-    transition: transform 0.3s ease;
-}
-
-.read-btn:hover {
-    text-decoration: underline;
-    transform: scale(1.05);
-}
-
-.thai-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
+}*/
 
 .profile-container {
     display: flex;
@@ -472,6 +348,92 @@ nav {
     text-align: center;
     max-width: 400px;
 }
+
+/*Week 3*/
+
+.blog-list {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.blog-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.blog-title:hover {
+    color: #F7418F;
+    transform: scale(0.99);
+}
+
+.blog-category {
+    font-style: italic;
+    color: #666;
+}
+
+.blog-author {
+    font-weight: bold;
+}
+
+.blog-views {
+    color: #999;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 830px) {
+    .blog-item {
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .blog-title {
+        font-size: 20px;
+    }
+}
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.statistic-item {
+    margin-bottom: 10px;
+}
+
+.statistic-label {
+    font-weight: bold;
+    color: #fff;
+}
+
+.statistic-value {
+    margin-left: 10px;
+    color: #ddd;
+}
+
+/*Week 3*/
 
 .profile-details h1 {
     font-size: 24px;
@@ -739,6 +701,7 @@ h1 {
 @media screen and (max-width: 600px) {
     .container {
         padding: 10px;
+        margin: 5%;
     }
 
     .container input[type="submit"] {
